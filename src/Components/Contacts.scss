@@ -1,13 +1,56 @@
-.wrapper{
+.massege{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: red;
+        text-align: center;
+        font-size: 54px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 40%;
+    }
+}
+.userWraper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     border-top: 2px solid #fff;
     text-align: center;
-    border-bottom: 2px solid #fff;
-}
-.wrapper h2{
-    color: green;
-    font-size: 34px;
 
-}
+    .userInfo{
+        display: flex;
+        justify-content:space-between;
+        padding: 10px;
+        border-top:2px solid blue;
+        border-bottom:2px solid blue;
+        h2{
+            color: green;
+            font-size: 34px;
+            
+        }
+        img{
+            border-radius: 50%;
+
+        }
+        .username{
+            font-size: 24px;
+            color: #fff;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+    
+}    
 
