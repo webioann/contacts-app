@@ -1,10 +1,9 @@
-import './App.css';
-import Contacts from "./Components/Contacts.js";
+import {Contacts} from "./Components/Contacts.js";
 
 function App() {
   return (
     <div className="App">
-      <Contacts/>
+      <Contacts style={{color:"red"}}/>
     </div>
   );
 }

@@ -1,6 +1,13 @@
 .wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 2px solid #fff;
     text-align: center;
-    color:red;
-    font-size: 24px;
+    border-bottom: 2px solid #fff;
+}
+.wrapper h2{
+    color: green;
+    font-size: 34px;
+
 }
 

@@ -1,12 +1,15 @@
 import React from 'react'
+import './Contacts.scss';
 
 function Contacts() {
     return (
-        <div className='wrapper'>
-            <h2>Contacts</h2>
+        <div>
+            <div className='wrapper'>
+                <h2>Contacts --root--</h2>
+            </div>
         </div>
     )
 }
 
 
-export default Contacts;
+export {Contacts};
