@@ -5,6 +5,8 @@ import './Tocopy.scss'
 
 function Tocopy(props) {
     const [opas,setOpas] = useState(0);
+    const [hover,setHover] = useState('toCopy');
+
     const info = props.info;
     const icon = props.icon;
 
@@ -19,12 +21,21 @@ function Tocopy(props) {
             setOpas(0)
             }
             ,2000);
+    }
 
-    }        
+    function hoverMe () {
+        setHover('hoverCopy');
+    } 
+    function notHover () {
+        setHover('toCopy');
+    } 
+
+    
     return (
-        <div className='tocopy'>
+        <div className={hover} onClick={clickMe} onMouseEnter={hoverMe} onMouseLeave={notHover}>
            <img className='icon'  src={icon} alt=''/> 
-           <div className='pep' onClick={clickMe} >{info}
+           <div className='pep' onClick={clickMe} >
+               <span className='span'>{info}</span>
                 <Alert opas={opas}/>
            </div>    
         </div>

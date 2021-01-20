@@ -13,6 +13,8 @@ function Contacts() {
         const[data,setData] = useState([]);
         const[isLoad,setisLoad] = useState(true);
         const[isError,setisError] = useState(false);
+
+        
     
         useEffect(() => {
         const getContacts = async () => {
@@ -47,8 +49,10 @@ function Contacts() {
     };
     
     const contacts = useContacts();
-
     const data = contacts.data;
+
+   
+
     console.log(data);
 
     if (!contacts.isLoad && !contacts.isError){
@@ -61,7 +65,7 @@ function Contacts() {
                 <div className='userInfo' key={data.login.uuid} >
                     <img className='avatar' src={data.picture.medium}  alt=''/>
                     <p className='fullname'>{data.name.first} {data.name.last}</p>
-                    <p className='birthday'>User : {data.name.first} {data.name.last}</p>
+                    <p className='birthday'>{data.dob.date}</p>
                     <Tocopy info={data.phone} icon={icon}/>
                     <Tocopy info={data.email} icon={icon} />
                     <p className='location'>{data.location.city} , {data.location.state}</p>
