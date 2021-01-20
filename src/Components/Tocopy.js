@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import PropTypes from 'prop-types';
+import Alert from './Alert';
 import './Tocopy.scss'
 
 function Tocopy(props) {
@@ -24,9 +25,7 @@ function Tocopy(props) {
         <div className='tocopy'>
            <img className='icon'  src={icon} alt=''/> 
            <div className='pep' onClick={clickMe} >{info}
-                <span className='alert' style={{opacity: opas}}>To copy.
-                    <span className='taile'></span>
-                </span>
+                <Alert opas={opas}/>
            </div>    
         </div>
     )
