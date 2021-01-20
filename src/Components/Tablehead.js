@@ -5,18 +5,18 @@ import './Tablehead.scss';
 function Tablehead() {
     return (
         <div className='container'>
-            <div className='column'>Avatar</div>
-            <div className='column'>Full name</div>
+            <div className='avatar'>Avatar</div>
+            <div className='column fullname'>Full name</div>
             <div className='column'>Birthday</div>
-            <div className='column'>Phone</div>
-            <span className='column'>Email</span>
-            <span className='column'>Location</span>
-            <span className='column'>Nationality</span>
+            <div className='column phone'>Phone</div>
+            <div className='column email'>Email</div>
+            <div className='column'>Location</div>
+            <div className='column nation'>Nationality</div>
             
         </div>
     )
 }
-
+ 
 
 
 

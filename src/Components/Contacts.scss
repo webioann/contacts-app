@@ -17,40 +17,55 @@
         width: 40%;
     }
 }
-.userWraper{
+.contacts{
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    border-top: 2px solid #fff;
+    border-top: 2px solid#ADB0B6;
     text-align: center;
-
+    h2{
+        color: #ADB0B6;
+        font-size: 34px;
+        
+    }
     .userInfo{
         display: flex;
         justify-content:space-between;
-        padding: 10px;
-        border-top:2px solid blue;
-        border-bottom:2px solid blue;
-        h2{
-            color: green;
-            font-size: 34px;
-            
-        }
+        border-bottom:2px solid #ADB0B6;
+        align-content: center;
+        line-height: 2;
+        list-style: none;
         img{
             border-radius: 50%;
-
-        }
-        .username{
-            font-size: 24px;
-            color: #fff;
-            text-decoration: underline;
-            margin-left: 10px;
-        }
-        p{
+            min-width: 80px;
             padding: 10px;
         }
-    }
-    
-}    
-
+        p{
+            min-width: 200px;
+            padding: 10px;
+            color:#ADB0B6;
+            text-align: left;
+            // border-left: 1px solid #000;
+        }
+        .fullname{
+            min-width: 150px;
+            color:#1B90FF;
+            cursor: pointer;
+        }
+        .phone{
+            min-width: 150px;
+            color:#1B90FF;
+            cursor: pointer;
+        }
+        .email{
+            min-width: 250px;
+            color:#1B90FF;
+            cursor: pointer;
+        }
+        .nationality{
+            padding-left: 30px;
+        }
+    }    
+}
