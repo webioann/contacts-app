@@ -35,11 +35,11 @@
         justify-content:space-between;
         border-bottom:2px solid #ADB0B6;
         align-content: center;
-        line-height: 2;
         list-style: none;
         img{
             border-radius: 50%;
-            min-width: 80px;
+            width: 75px;
+            height: 75px;
             padding: 10px;
         }
         p{
@@ -50,7 +50,7 @@
             // border-left: 1px solid #000;
         }
         .fullname{
-            min-width: 150px;
+            min-width: 200px;
             color:#1B90FF;
             cursor: pointer;
         }
