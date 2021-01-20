@@ -1,5 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import Tablehead from './Tablehead';
+import Tocopy from './Tocopy';
+import icon from './icon.png'
 import './Contacts.scss';
 
 
@@ -16,7 +18,7 @@ function Contacts() {
         const getContacts = async () => {
             setisLoad(true);
             try {
-                const response = await fetch("https://randomuser.me/api/?results=100")
+                const response = await fetch("https://randomuser.me/api/?results=50")
                 const {results,error} = await response.json();
                 if (error) {
                     throw new Error(error);
@@ -60,17 +62,13 @@ function Contacts() {
                     <img className='avatar' src={data.picture.medium}  alt=''/>
                     <p className='fullname'>{data.name.first} {data.name.last}</p>
                     <p className='birthday'>User : {data.name.first} {data.name.last}</p>
-                    <p className='phone'>{data.phone} </p>
-                    <p className='email'>{data.email} </p>
+                    <Tocopy info={data.phone} icon={icon}/>
+                    <Tocopy info={data.email} icon={icon} />
                     <p className='location'>{data.location.city} , {data.location.state}</p>
                     <p className='nationality'>{data.nat}  </p>
                 </div>
                 ))}
                  </ul>
-
-                {/* <ul className='window' >
-                    {data.map((data) => (<li key={data.login.uuid}>{data.name.first}</li>))}
-                </ul>  */}
 
             </div>
         )

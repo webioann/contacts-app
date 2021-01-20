@@ -36,7 +36,7 @@
         border-bottom:2px solid #ADB0B6;
         align-content: center;
         list-style: none;
-        img{
+        .avatar{
             border-radius: 50%;
             width: 75px;
             height: 75px;
@@ -50,19 +50,22 @@
             // border-left: 1px solid #000;
         }
         .fullname{
-            min-width: 200px;
-            color:#1B90FF;
-            cursor: pointer;
-        }
-        .phone{
             min-width: 150px;
             color:#1B90FF;
             cursor: pointer;
         }
-        .email{
-            min-width: 250px;
-            color:#1B90FF;
-            cursor: pointer;
+        // .phone{
+        //     min-width: 150px;
+        //     color:#1B90FF;
+        //     cursor: pointer;
+        // }
+        // .email{
+        //     min-width: 250px;
+        //     color:#1B90FF;
+        //     cursor: pointer;
+        // }
+        .location{
+            margin-left: 100px;
         }
         .nationality{
             padding-left: 30px;

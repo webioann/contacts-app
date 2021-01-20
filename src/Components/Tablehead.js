@@ -11,7 +11,7 @@ function Tablehead() {
                 <div className='column'>Birthday</div>
                 <div className='column phone'>Phone</div>
                 <div className='column email'>Email</div>
-                <div className='column'>Location</div>
+                <div className='column local'>Location</div>
                 <div className='column nation'>Nationality</div>
             </ul>
         </div>

@@ -1,10 +1,11 @@
 .container{
+    border-bottom:2px solid #ADB0B6;
+
     ul{
-        width: 100%;
+        width: 0%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-bottom:2px solid #ADB0B6;
         .avatar{
             min-width: 80px;
             padding: 10px;
@@ -24,8 +25,10 @@
             min-width: 150px;
         }
         .email{
-            min-width: 250px;
+            min-width: 270px;
         }
-
+        .local{
+            min-width: 150px;
+        }
     }
 }
