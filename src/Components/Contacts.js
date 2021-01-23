@@ -3,6 +3,9 @@ import Tablehead from './Tablehead';
 import Tocopy from './Tocopy';
 import icon from './icon.png'
 import './Contacts.scss';
+// import Nation from '../CONST/nationality.js'
+
+import Nat from './Nat'
 
 
 function Contacts() {
@@ -14,21 +17,21 @@ function Contacts() {
         const[isLoad,setisLoad] = useState(true);
         const[isError,setisError] = useState(false);
 
-        
     
         useEffect(() => {
         const getContacts = async () => {
-            setisLoad(true);
+            
             try {
-                const response = await fetch("https://randomuser.me/api/?results=50")
-                const {results,error} = await response.json();
-                if (error) {
-                    throw new Error(error);
-                }
-                setData(results);
-                setisError(false);
-    //             console.log(results)
-                console.log('USERS IS LOAD')
+                    const response = await fetch("https://randomuser.me/api/?page=1&results=11&seed=abc")
+                    const {results,error} = await response.json();
+                    if (error) {
+                        throw new Error(error);
+                    }
+                    setData(results);
+                    setisError(false);
+                        console.log(results)
+                        console.log('USERS IS LOAD');
+
                 }
                 catch (error) {
                     setisError(true);
@@ -50,15 +53,17 @@ function Contacts() {
     
     const contacts = useContacts();
     const data = contacts.data;
-
-   
-
-    console.log(data);
+    
 
     if (!contacts.isLoad && !contacts.isError){
+
+
+
         return (
             <div className='contacts'>
-                <h2>Contacts ...login.uuid = {data[0].login.uuid}</h2>
+                <div className='field'>
+                    <button>Sort nationality</button>
+                </div>
                 <Tablehead/>
                 <ul>
                 {data.map((data) => (   
@@ -69,7 +74,9 @@ function Contacts() {
                     <Tocopy info={data.phone} icon={icon}/>
                     <Tocopy info={data.email} icon={icon} />
                     <p className='location'>{data.location.city} , {data.location.state}</p>
-                    <p className='nationality'>{data.nat}  </p>
+
+                    {/* <p className='nationality'>{data.nat}  </p> */}
+                    <Nat data={data.nat}/>
                 </div>
                 ))}
                  </ul>
@@ -90,4 +97,4 @@ function Contacts() {
         )
     }
 }    
-export {Contacts};
+export default Contacts;
