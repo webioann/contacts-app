@@ -1,3 +1,68 @@
 .sortby{
-    border: 2px solid green;
+    padding: 5px 10px;
+    color: #ADB0B6;
+    display: flex;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ADB0B6;
+    .search{
+        width: 30%;
+        border: 2px solid  #ADB0B6;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        cursor: pointer;
+        .input{
+            width:100%;
+            border: 2px solid  #ADB0B6;
+            margin: -2px;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .input:active{
+            border: 2px solid  #ADB0B6;
+            color: #ADB0B6;
+        }
+        .glass{
+            width: 34px;
+            height: 34px;
+            margin: 0 -5px 0 15px;
+            font-size: 35px;
+            transform: rotate(45deg);
+        }
+    }
+    .gender-sort{
+        width:20%;
+        border: 2px solid  #ADB0B6;
+        border-radius: 5px;
+        margin-left: 10px;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .nationality-sort{
+        width:20%;
+        border: 2px solid  #ADB0B6;
+        border-radius: 5px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .close-button{
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 2px solid  #ADB0B6;
+        border-radius: 5px;
+        margin-left: auto;
+    }
+    .close-button:hover{
+        background-color: #ccc;
+        color:red;
+    }
 }

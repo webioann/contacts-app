@@ -15,7 +15,7 @@ const Nation = {
     NL: "Dutch",
     NZ: "New Zealand",
     TR: "Turkish",
-    'US': "American",
+    US: "American",
 }
 
 export default Nation;
