@@ -1,0 +1,60 @@
+.users-list{
+    display: flex;
+    flex-direction: column;
+    border-top:2px solid #ADB0B6;
+
+    .user-row{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:2px solid #ADB0B6;
+        .photo{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+        .name{
+            padding: 10px;
+            margin-left: 10px;
+            width: 150px;
+            color:#1B90FF;
+            cursor: pointer;
+            text-align: left;
+            border-left: 1px solid #000;
+        }
+        .phon{
+            text-align: left;
+            min-width: 180px;
+ 
+        }
+        .emailer{
+            text-align: left;
+            min-width: 200px;
+
+        }
+        .loca{
+            text-align: left;
+            width: 150px;
+            border: 2px solid red;
+        }
+    }
+    .massege{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.07);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: red;
+            text-align: center;
+            font-size: 54px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 40%;
+        }
+    }
+       
+}    

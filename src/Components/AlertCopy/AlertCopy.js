@@ -1,7 +1,7 @@
 import React from 'react';
-import './Alert.scss';
+import './AlertCopy.scss';
 
-function Alert(props) {
+function AlertCopy(props) {
     const opas = props.opas;
     return (
         <>
@@ -11,4 +11,4 @@ function Alert(props) {
         </>
     )
 }
-export default Alert;
+export default AlertCopy;

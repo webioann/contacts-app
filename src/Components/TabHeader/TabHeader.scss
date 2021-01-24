@@ -1,22 +1,21 @@
-.container{
-    border-bottom:2px solid #ADB0B6;
-
-    ul{
-        width: 0%;
+    .container{ 
+        background-color: rgba(0,0,0,0.07);
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        flex-direction: row;
+        color: #ADB0B6;
+        text-align: left;
+        padding: 10px;
         .avatar{
-            min-width: 80px;
-            padding: 10px;
-            color: #ADB0B6;
+            min-width: 100px;
+            padding-left: 15px;
         }
-        .column{
+        .fullname{
             min-width: 200px;
-            padding: 10px;
+        }
+        .birth{
+            min-width: 200px;
             color: #ADB0B6;
-            text-align: left;
-            // border-left: 1px solid #000;
         }
         .fullname{
             min-width: 200px;
@@ -30,5 +29,9 @@
         .local{
             min-width: 150px;
         }
+        .nation{
+            min-width: 100px;
+            text-align: right;
+        }
+
     }
-}

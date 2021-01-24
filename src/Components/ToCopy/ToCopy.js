@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import PropTypes from 'prop-types';
-import Alert from './Alert';
-import './Tocopy.scss'
+import AlertCopy from '../AlertCopy/AlertCopy';
+import './ToCopy.scss'
 
-function Tocopy(props) {
+function ToCopy(props) {
     const [opas,setOpas] = useState(0);
     const [hover,setHover] = useState('toCopy');
 
@@ -29,22 +29,20 @@ function Tocopy(props) {
     function notHover () {
         setHover('toCopy');
     } 
-
-    
     return (
         <div className={hover} onClick={clickMe} onMouseEnter={hoverMe} onMouseLeave={notHover}>
            <img className='icon'  src={icon} alt=''/> 
            <div className='pep' onClick={clickMe} >
                <span className='span'>{info}</span>
-                <Alert opas={opas}/>
+                <AlertCopy opas={opas}/>
            </div>    
         </div>
     )
 }
 
-Tocopy.propTypes = {
+ToCopy.propTypes = {
     info: PropTypes.string.isRequired,
 }
 
-export default Tocopy;
+export default ToCopy;
 

@@ -8,7 +8,7 @@ const Nation = {
     ES: "Spanish",
     FI: "Finnish",
     FR: "Franch",
-    GB: "Dritish",
+    GB: "British",
     IE: "Irish",
     IR: "Iranian", 
     NO: "Norwegian",
