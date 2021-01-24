@@ -5,36 +5,23 @@
 
     .user-row{
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         border-bottom:2px solid #ADB0B6;
+        padding: 5px 10px;
+        align-items: center;
         .photo{
             width: 75px;
             height: 75px;
             border-radius: 50%;
         }
         .name{
-            padding: 10px;
-            margin-left: 10px;
-            width: 150px;
+            width: 120px;
             color:#1B90FF;
             cursor: pointer;
             text-align: left;
-            border-left: 1px solid #000;
-        }
-        .phon{
-            text-align: left;
-            min-width: 180px;
- 
-        }
-        .emailer{
-            text-align: left;
-            min-width: 200px;
-
-        }
-        .loca{
-            text-align: left;
-            width: 150px;
-            border: 2px solid red;
+            line-height: 1.2;
+            margin-left: 15px;
+            // border-left: 1px solid #000;
         }
     }
     .massege{

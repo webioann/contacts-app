@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react';
 import Nationality from '../Nationality/Nationality';
 import ToCopy from '../ToCopy/ToCopy';
 import Birthday from '../Birthday/Birthday';
+import Location from '../Location/Location';
 import icon from './icon.png'
 import './UsersList.scss';
 
@@ -58,9 +59,9 @@ function UsersList() {
                         <img className='photo' src={data.picture.medium}  alt=''/>
                         <p className='name'>{data.name.first} {data.name.last}</p>
                         <Birthday data={data}/>
-                        <ToCopy className='phon' info={data.phone} icon={icon}/>
-                        <ToCopy className='emailer' info={data.email} icon={icon} />
-                        <p className='loca'>{data.location.city} , {data.location.state}</p>
+                        <ToCopy  info={data.phone} icon={icon}/>
+                        <ToCopy  info={data.email} icon={icon} />
+                        <Location data={data}/>
                         <Nationality data={data.nat}/>
                     </div>
                 ))
