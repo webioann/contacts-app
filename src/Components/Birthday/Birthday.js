@@ -23,7 +23,7 @@ function Birthday(props) {
             if(month === 11) {month = 'December'}
             let year = dd.getFullYear();
         birthday = `${day} ${month}  ${year}`;
-        console.log(birthday);
+        
     }
     time();
 

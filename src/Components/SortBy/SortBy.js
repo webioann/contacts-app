@@ -3,15 +3,7 @@ import Nation from '../../CONST/Nation';
 import SortByNationality from '../SortByNationality/SortByNationality';
 import './SortBy.scss'
 
-function SortBy(props) {
-
-    // const data = props.data;
-    // const nat = data[0].nat
-
-    console.log(Nation.FI);
-    // console.log(data);
-    // console.log(nat);
-
+function SortBy() {
 
 
        return (

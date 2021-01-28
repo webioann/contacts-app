@@ -1,4 +1,4 @@
-.nationality-sort{
+.sort-focus{
     width:20%;
     border: 2px solid  #ADB0B6;
     border-radius: 5px;
@@ -7,15 +7,23 @@
     align-items: center;
     padding-left: 10px;
     cursor: pointer;
-}
-.nationality-sort-focus{
-    width:20%;
-    border: 2px solid  #ADB0B6;
-    border-radius: 5px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    cursor: pointer;
-
+    position: relative;
+    .transparent{
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 100%;
+        padding: 10px 0;
+        border: 2px solid  #ADB0B6;
+        border-radius: 5px;
+        background-color: white;
+        z-index: 10;
+        .list-nat{
+            list-style: none;
+            padding: 5px 20px;
+        }
+        .list-nat:hover{
+            background-color: rgba(0,0,0,0.07);
+        }
+    }
 }
