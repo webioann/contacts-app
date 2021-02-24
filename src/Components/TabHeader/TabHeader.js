@@ -3,6 +3,7 @@ import './TabHeader.scss';
 
 
 function TabHeader() {
+
     return (
         <div className='container'>
                 <div className='avatar'>Avatar</div>
@@ -16,7 +17,4 @@ function TabHeader() {
     )
 }
  
-
-
-
 export default TabHeader;

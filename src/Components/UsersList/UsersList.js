@@ -55,7 +55,7 @@ function UsersList() {
         return (
             <div className='users-list'>
                 {data.map((data) => (   
-                    <div className='user-row' >
+                    <div className='user-row' key = {data.login.uuid}>
                         <img className='photo' src={data.picture.medium}  alt=''/>
                         <p className='name'>{data.name.first} {data.name.last}</p>
                         <Birthday data={data}/>
